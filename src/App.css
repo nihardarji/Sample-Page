@@ -36,3 +36,92 @@
     transform: rotate(360deg);
   }
 }
+.boldFont{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: bold;
+}
+.regularFont{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+.mediumFont{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+a:hover {
+  color:rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.marginTopClass{
+  margin-top: -5%;
+}
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+/* override position and transform in 3.3.x */
+.carousel-inner .item.left.active {
+  transform: translateX(-33%);
+}
+.carousel-inner .item.right.active {
+  transform: translateX(33%);
+}
+
+.carousel-inner .item.next {
+  transform: translateX(33%)
+}
+.carousel-inner .item.prev {
+  transform: translateX(-33%)
+}
+
+.carousel-inner .item.right,
+.carousel-inner .item.left { 
+  transform: translateX(0);
+}
+
+.mb-auto.img-fluid.imageHeight{
+  height: 145px;
+  width: 115px;
+}
+
+.react-multi-carousel-dot-list {
+  position: inherit !important;
+}
+
+.carousel-control.left,.carousel-control.right {background-image:none;}
+
+.row.container.justify-content-between.minwidth{
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 114px;
+}
+.smallfontSize{
+  font-size: xx-small;
+}
+@media (max-width: 992px) {
+.row.container.justify-content-between.minwidth{
+  height: auto;
+  margin: 0%;
+  padding: 0%;
+}
+.marginTopClass{
+  margin-top: 2%;
+}
+}
+@media (max-width: 768px) {
+  .row.container.justify-content-between.minwidth{
+    height: auto;
+    margin: 0%;
+    padding: 0%;
+  }
+  .marginTopClass{
+    margin-top: 5%;
+  }
+  .mb-auto.img-fluid.imageHeight{
+    height: 175px;
+    width: 175px;
+  }
+}
